@@ -1,97 +1,159 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
+}
 :root {
     font-family: Montserrat;
+    font-size: 12pt;
 }
-
-html {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 header {
+    height: 100vh;
     text-align: center;
     align-content: center;
-    width: 100%;
-    height: 100dvh;
 }
-
-header button {
+button {
     cursor: pointer;
     font: inherit;
-    font-size: 2em;
+    font-size: inherit;
+    font-size: 20px;
+    height: 30px;
     position: absolute;
-    bottom: 0.7em;
+    bottom: 20px;
     border: none;
     background: none;
+    transform: translateX(-50%);
 }
-
 main {
-    margin: 0;
-    padding: 0;
+    padding: 5rem 5rem;
+    padding-bottom: 0;
 }
-
 ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
-
-.logo {
-    height: 70px;
-    width: 70px;
-    object-fit: contain;
-}
-
-section {
-    margin: 5vh 10vw;
-}
-
-section > ul {
-    margin: 0;
+    grid-template-columns: 1fr 1fr;
     padding: 0;
+    margin: 0;
 }
-
-section > ul > a > li::marker,
-section > ul > li::marker {
-    content: none;
+li {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(1fr, auto); /* Two rows */
+    grid-column-gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid;
+    border-color: gray;
+    transition: box-shadow 0.2s ease-in-out;
 }
-
-a {
+li:has(img) {
+    grid-template-columns: 6rem auto; /* Two columns */
+}
+li > a {
+    display: contents;
+    color: inherit;
     text-decoration: none;
+}
+li:has(a):hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+li li {
+    display: list-item;
+    list-style: disc;
+    border: none;
+    padding: 0.25rem 0;
+    margin: 0;
+    margin-left: 1rem;
+}
+li li.level {
+    display: block;
+    align-content: center;
+    border: none;
+    margin: 0;
+    position: relative; /* Add this */
+    padding-left: 65px; /* Add space for the dots */
+}
+li li.level::before {
+    font-family: monospace;
+    font-size: 25px;
+    position: absolute; /* Position absolutely */
+    left: 0; /* Align to the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Fine-tune vertical alignment */
+    display: inline-block; /* Make it a block element */
+    width: 40px; /* Give it a fixed width */
+}
+li li.expert::before {
+    content: "••••";
+    color: green;
+}
+li li.proficient::before {
+    content: "•••◦";
+    color: limegreen;
+}
+li li.intermediate::before {
+    content: "••◦◦";
+    color: blue;
+}
+li li.beginner::before {
+    content: "•◦◦◦";
     color: black;
 }
-
-section > ul > a > li,
-section > ul > li {
-    border: 1px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: gray;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
+img {
+    height: 100%;
+    width: 6rem;
+    grid-column: 1 / 2; /* Takes full left column */
+    grid-row: 1 / 3; /* Spans both rows */
+    object-fit: contain;
 }
-
-p {
-    margin-bottom: 0;
-}
-
-span {
-    flex-grow: 1;
-}
-
 h3 {
-    margin-top: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+}
+p {
+    vertical-align: top;
+    margin: 0;
 }
 
-@media (max-width: 750px) {
-    section > ul {
-        grid-template-columns: 1fr;
+footer {
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 1px solid;
+    border-color: gray;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in-out;
+}
+footer:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer > a {
+    display: contents;
+}
+
+@media screen and (max-width: 1222px) {
+    main {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        padding: 0 5rem; /* Reduced side margins */
+    }
+
+    ul {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+@media screen and (max-width: 670px) {
+    main {
+        padding: 0;
     }
 }

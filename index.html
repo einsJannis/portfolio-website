@@ -3,136 +3,151 @@
     <head>
         <title>Jannis Piekarek</title>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="style/index.css" rel="stylesheet" />
         <script src="script/index.js"></script>
     </head>
     <body>
         <header>
             <h1>Jannis Piekarek</h1>
-            <button onclick="scrollToMain()">  </button>
+            <button onclick="scrollToMain()">
+                <img src="assets/icons/down_arrow.svg" alt="\/" />
+            </button>
         </header>
         <main>
-            <section id="experience">
-                <h2>Experience</h2>
+            <section id="education">
+                <h2>Education</h2>
                 <ul>
-                    <a href="https://vis.ethz.ch">
-                        <li>
-                            <img class="logo" src="assets/icons/vis.svg" />
-                            <span>
-                                <h3>Board Member (Events)</h3>
-                                <p>VIS</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="https://thealternative.ch">
-                        <li>
-                            <img class="logo" src="assets/icons/thealt.svg" />
-                            <span>
-                                <h3>Board Member (University Politics)</h3>
-                                <p>TheAlternative</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="https://geco.ethz.ch">
-                        <li>
-                            <img class="logo" src="assets/icons/geco.svg" />
-                            <span>
-                                <h3>Network Team</h3>
-                                <p>GECo</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="https://irrational.coffee">
-                        <li>
-                            <img class="logo" src="assets/icons/irraco.png" />
-                            <span>
-                                <h3>Barista</h3>
-                                <p>Irrational Coffee</p>
-                            </span>
-                        </li>
-                    </a>
-                </ul>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <a href="https://github.com/einsjannis/Lang">
-                        <li>
-                            <span>
-                                <h3>Lang</h3>
-                                <p>
-                                    A compiler I wrote as my highschool thesis
-                                </p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="https://github.com/einsjannis/www-term">
-                        <li>
-                            <span>
-                                <h3>www-term</h3>
-                                <p>
-                                    My old personal website with a shell like
-                                    interface
-                                </p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="https://github.com/einsjannis/tictactoe-asm">
-                        <li>
-                            <span>
-                                <h3>tictactoe-asm</h3>
-                                <p>A tictactoe written in Assembly</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="https://github.com/einsjannis/crabtype">
-                        <li>
-                            <span>
-                                <h3>crabtype</h3>
-                                <p>
-                                    A terminal type racing game written in Rust
-                                </p>
-                            </span>
-                        </li>
-                    </a>
+                    <li>
+                        <a href="https://www.ethz.ch">
+                            <img
+                                class="logo"
+                                src="assets/icons/eth_zurich_logo.jpg"
+                            />
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <p>ETH Zurich</p>
+                        </a>
+                    </li>
                 </ul>
             </section>
             <section id="skills">
                 <h2>Skills</h2>
                 <ul>
                     <li>
-                        <span>
-                            <h3>Tech Skills</h3>
-                            <ul>
-                                <li>Linux</li>
-                                <li>Database Modeling</li>
-                                <li>Computer Networks</li>
-                            </ul>
-                        </span>
+                        <h3>Tech Skills</h3>
+                        <ul>
+                            <li class="level expert">Linux</li>
+                            <li class="level proficient">
+                                Systems Programming
+                            </li>
+                            <li class="level proficient">Web Development</li>
+                            <li class="level proficient">
+                                Functional Programming
+                            </li>
+                            <li class="level proficient">Computer Networks</li>
+                            <li class="level intermediate">
+                                Database Modeling
+                            </li>
+                            <li class="level intermediate">
+                                Parallel Programming
+                            </li>
+                            <li class="level intermediate">UI/UX Design</li>
+                            <li class="level beginner">Distributed Systems</li>
+                        </ul>
                     </li>
                     <li>
-                        <span>
-                            <h3>Soft skills</h3>
-                            <ul>
-                                <li>Team Management</li>
-                                <li>Negotiation</li>
-                                <li>Project Management</li>
-                                <li>Public Speaking</li>
-                            </ul>
-                        </span>
+                        <h3>Programming languages</h3>
+                        <ul>
+                            <li class="level expert">Rust</li>
+                            <li class="level proficient">Kotlin</li>
+                            <li class="level proficient">Java</li>
+                            <li class="level proficient">C</li>
+                            <li class="level intermediate">JavaScript</li>
+                            <li class="level intermediate">Haskell</li>
+                            <li class="level intermediate">Python</li>
+                            <li class="level beginner">OCaml</li>
+                        </ul>
                     </li>
                     <li>
-                        <span>
-                            <h3>Programming languages</h3>
-                            <ul>
-                                <li>Java</li>
-                                <li>Kotlin</li>
-                                <li>C</li>
-                                <li>Rust</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                            </ul>
-                        </span>
+                        <h3>Soft skills</h3>
+                        <ul>
+                            <li>Team Management</li>
+                            <li>Negotiation</li>
+                            <li>Project Management</li>
+                            <li>Public Speaking</li>
+                            <li>Event Organization</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/einsjannis/uIndex">
+                            <h3>&#956;Index</h3>
+                            <p>A minimalistic Android Launcher</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/einsjannis/Lang">
+                            <h3>Lang</h3>
+                            <p>A compiler I wrote as my highschool thesis</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/einsjannis/www-term">
+                            <h3>www-term</h3>
+                            <p>
+                                My old personal website with a shell like
+                                interface
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/einsjannis/tictactoe-asm">
+                            <h3>tictactoe-asm</h3>
+                            <p>A tictactoe written in Assembly</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/einsjannis/crabtype">
+                            <h3>crabtype</h3>
+                            <p>A terminal type racing game written in Rust</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <ul>
+                    <li>
+                        <a href="https://vis.ethz.ch">
+                            <img class="logo" src="assets/icons/vis.svg" />
+                            <h3>Board Member (Event Lead)</h3>
+                            <p>VIS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://thealternative.ch">
+                            <img class="logo" src="assets/icons/thealt.svg" />
+                            <h3>Board Member (University Politics)</h3>
+                            <p>TheAlternative</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://geco.ethz.ch">
+                            <img class="logo" src="assets/icons/geco.svg" />
+                            <h3>Network Team</h3>
+                            <p>GECo</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://irrational.coffee">
+                            <img class="logo" src="assets/icons/irraco.png" />
+                            <h3>Barista</h3>
+                            <p>Irrational Coffee</p>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -140,31 +155,30 @@
                 <h2>Languages</h2>
                 <ul>
                     <li>
-                        <span>
-                            <h3>German</h3>
-                            <p>Native proficiency</p>
-                        </span>
+                        <h3>German</h3>
+                        <p>Native proficiency</p>
                     </li>
                     <li>
-                        <span>
-                            <h3>English</h3>
-                            <p>Bilingual proficiency</p>
-                        </span>
+                        <h3>English</h3>
+                        <p>Bilingual proficiency</p>
                     </li>
                     <li>
-                        <span>
-                            <h3>French</h3>
-                            <p>Limited working proficiency</p>
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            <h3>Swedish</h3>
-                            <p>Beginner proficiency</p>
-                        </span>
+                        <h3>French</h3>
+                        <p>Limited working proficiency</p>
                     </li>
                 </ul>
             </section>
+            <footer>
+                <a href="/legal.html">
+                    <p>
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Jannis Piekarek. All rights reserved.
+                    </p>
+                </a>
+            </footer>
         </main>
     </body>
 </html>
